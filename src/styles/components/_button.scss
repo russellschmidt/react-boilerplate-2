@@ -1,0 +1,45 @@
+.button {
+  border: none;
+  color: white;
+  font-size: $font-size-large;
+  font-weight: 300;
+  line-height: 1;
+  text-decoration: none;
+}
+
+
+.box-layout__button {
+  @extend .button;
+  background: $deep-blue;
+  border-radius: 50%;
+  box-shadow: 2px 2px 3px $shadow-grey;
+  display: inline-block;
+  font-size: $font-size-xl;
+  font-weight: 700;
+  height: 14rem;
+  line-height: 1.5;
+  margin-top: 10rem;
+  width: 14rem;
+}
+
+.header__button {
+  @extend .button;
+  background: none;
+  font-weight: 700;
+}
+
+.page-header__button {
+  @extend .button;
+  background: $deep-blue;
+  box-shadow: 1px 1px 2px lighten($shadow-grey, 40%);
+  padding: 1rem;
+}
+
+.add-expense__button {
+  @extend .page-header__button;
+}
+
+.remove-expense__button {
+  @extend .page-header__button;
+  background: $danger-red;
+}
